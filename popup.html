@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="popup.css">
+    <script src="popup.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- country -->
+    <link rel="stylesheet" href="references/bootstrap-3.3.7-dist/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="references/bootstrap-select-1.13.14/dist/css/bootstrap-select.min.css" text="text/css">
+    <link rel="stylesheet" href="references/bootstrap-select-country-4.2.0/dist/css/bootstrap-select-country.min.css" type="text/css"/>
+
+    <script src="references/jquery-3.6.0.min.js"></script>
+    <script src="references/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script src="references/bootstrap-select-1.13.14/dist/js/bootstrap-select.min.js"></script>
+    <script src="references/bootstrap-select-country-4.2.0/dist/js/bootstrap-select-country.min.js"></script>
+    
+    <!-- jquery -->
+    <script src="references/form-master/dist/jquery.form.min.js"></script>
+
+  </head>
+  <body id="bootstrap-override">
+      <img src="icons/helpButton.png" alt="helpButton" id="helpIcon">
+      <div class="preHelpPopup" id="preHelpPopup">
+        <div class="helpPopup" id="myHelpPopup">
+          <div class="containerBlock">
+            <span class="close">&times;</span>
+            <h5 id="welcome">WELCOME TO POOP</h5>
+            <p>
+                Can’t decide on what to watch tonight? We’ve got you covered, and it’s as easy as 1, 2, 3:<br>
+  
+                <ol>
+                    <li>Select your streaming service of choice</li>
+                    <li>Input your media preferences</li>
+                    <li>Spin the wheel!</li>
+                </ol>
+  
+                In no time, our trusty algorithm will have proffered up a movie or series available on your service and fitted to your needs. Say goodbye to hours of aimless scrolling, and hello to a glass of wine in front of the TV. 
+                <br>
+  
+                Now sit back, relax, and enjoy the show :) <br>
+  
+            </p>
+  
+          </div>
+        </div>
+      </div>
+
+
+    <div class="containerBlock">
+      <h2>Welcome to POOP!</h2>
+      <p id="introduction">You're indecisive. We get it (we really do). We have a solution. Just enter some basic information first so we can get to know you better.</p>
+    </div>
+  
+    <!-- form input -->
+      <form class="containerBlock" action="form1data.php" method="POST" id="form1">
+        <div class="input-choices">
+          <label class="input-label" for="firstName">First Name</label><br>
+          <input class="input-box" type="text" id="name"><br>
+          <label class="input-label" for="country">Country</label><br>
+          <select class="selectpicker countrypicker input-box select-button" data-flag="true" data-default="US" id="country"></select>
+        </div>
+        <!-- choose streaming service -->
+        <label class="input-choices" for="service" id="service-label">Primary Streaming Service</label><br>
+        <!-- might have to add javascript here to keep the button active, all the while storing the data and sending it to backend -->
+        <div class="block1">
+          <input type="button" class="serviceButtons" value="Netflix" id="Netflix">
+          <input type="button" class="serviceButtons" value="HBO" id="HBO">
+          <input type="button" class="serviceButtons" value="Hulu" id="Hulu">
+          <input type="button" class="serviceButtons" value="PrimeVideo" id="PrimeVideo"><br> 
+        </div>
+        <input class="submit-button" type="submit" id="first-submit" value="LET'S GET CHURNING!">
+      </form>
+  
+    <script src="popup.js"></script>
+
+    <div class="footnotes">
+      <!-- talk to the developers -->
+      <a href="mailto: deya.liao@gmail.com,jocelynli.des02@gmail.com"><img src="icons/Email.png"></a>
+      <p id="contact"> write the developers!</p>
+    </div>   
+  </body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="popup.css">
+    <script src="popup.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- country -->
+    <link rel="stylesheet" href="references/bootstrap-3.3.7-dist/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="references/bootstrap-select-1.13.14/dist/css/bootstrap-select.min.css" text="text/css">
+    <link rel="stylesheet" href="references/bootstrap-select-country-4.2.0/dist/css/bootstrap-select-country.min.css" type="text/css"/>
+
+    <script src="references/jquery-3.6.0.min.js"></script>
+    <script src="references/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script src="references/bootstrap-select-1.13.14/dist/js/bootstrap-select.min.js"></script>
+    <script src="references/bootstrap-select-country-4.2.0/dist/js/bootstrap-select-country.min.js"></script>  </head>
+  <body id="bootstrap-override">
+    <img src="icons/helpButton.png" alt="helpButton" id="helpIcon">
+    <div class="preHelpPopup" id="preHelpPopup">
+      <div class="helpPopup" id="myHelpPopup">
+        <div class="container">
+          <span class="close">&times;</span>
+          <h5>WELCOME TO POOP</h5>
+          <p>
+              Can’t decide on what to watch tonight? We’ve got you covered, and it’s as easy as 1, 2, 3:<br>
+
+              <ol>
+                  <li>Select your streaming service of choice</li>
+                  <li>Input your media preferences</li>
+                  <li>Spin the wheel!</li>
+              </ol>
+
+              In no time, our trusty algorithm will have proffered up a movie or series available on your service and fitted to your needs. Say goodbye to hours of aimless scrolling, and hello to a glass of wine in front of the TV. 
+              <br>
+
+              Now sit back, relax, and enjoy the show :) <br>
+
+          </p>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="popup.js"></script>
+    <p class="introduction">
+      NAME, what to watch?
+      </p>
+
+
+    <!-- form input -->
+    <form id="user_preferences" action="popup3.html" method="get">
+
+
+    <!-- choose genre -->
+      <label for="genre" class="selections">GENRE</label><br>
+      <select name="genre" id="genre">
+         <option value="any">All Genres</option>
+          <option value="biography">Biography</option>
+          <option value="film noir">Film Noir</option>
+          <option value="game show">Game Show</option>
+          <option value="musical">Musical</option>
+          <option value="sport">Sport</option>
+          <option value="short">Short</option>
+          <option value="adult">Adult</option>
+          <option value="adventure">Adventure</option>
+          <option value="fantasy">Fantasy</option>
+          <option value="animation">Animation</option>
+          <option value="drama">Drama</option>
+          <option value="horror">Horror</option>
+          <option value="action">Action</option>
+          <option value="comedy">Comedy</option>
+          <option value="history">History</option>
+          <option value="western">Western</option>
+          <option value="thriller">Thriller</option>
+          <option value="crime">Crime</option>
+          <option value="documentary">Documentary</option>
+          <option value="science fiction">Science Fiction</option>
+          <option value="mystery">Mystery</option>
+          <option value="music">Music</option>
+          <option value="romance">Romance</option>
+          <option value="family">Family</option>
+          <option value="war">War</option>
+          <option value="news">News</option>
+          <option value="reality">Reality</option>
+          <option value="talk show">Talk Show</option>
+      </select><br>
+
+      <!-- choose language, exact options configure -->
+      <label for="language" class="selections">LANGUAGE</label><br>
+      <input list="languages">
+        <datalist id="languages">
+          <option value="any">All Languages</option>
+          <option value="af">Afrikaans</option>
+          <option value="sq">Albanian</option>
+          <option value="am">Amharic</option>
+          <option value="ar">Arabic</option>
+          <option value="hy">Armenian</option>
+          <option value="my">Burmese</option>
+          <option value="cn">Chinese</option>
+          <option value="hz">Croatian</option>
+          <option value="cs">Czech</option>
+          <option value="da">Danish</option>
+          <option value="en">English</option>
+          <option value="fa">Farsi</option>
+          <option value="fr">French</option>
+          <option value="de">German</option>
+          <option value="el">Greek</option>
+          <option value="he">Hebrew</option>
+          <option value="hi">Hindi</option>
+          <option value="hu">Hungarian</option>
+          <option value="id">Indonesian</option>
+          <option value="it">Italian</option>
+          <option value="ja">Japanese</option>
+          <option value="ko">Korean</option>
+          <option value="ma">Malay</option>
+          <option value="po">Polish</option>
+          <option value="pt">Portuguese</option>
+          <option value="ru">Russian</option>
+          <option value="es">Spanish</option>
+          <option value="sv">Swedish</option>
+          <option value="te">Telugu</option>
+          <option value="uz">Uzbek</option>
+          <option value="vi">Vietnamese</option>
+        </datalist>
+
+        <label for="media" class="selections">MEDIA</label><br>
+        <input type="radio" name="media type" value="movie">
+        <label for="movie">Movie</label>
+        <input type="radio" name="media type" value="series">
+        <label for="series">TV Show</label><br>
+
+        <input class="submit-button" type="submit" id="first-submit" value="Let's Spin!">
+        
+      <button id="changeColor"></button>
+
+    </form>
+
+    <div class="footnotes">
+      <!-- talk to the developers -->
+      <a href="mailto: deya.liao@gmail.com,jocelynli.des02@gmail.com"><img src="icons/Email.png"></a>
+      <p id="contact"> write the developers!</p>
+    </div>   
+      <!-- choose country -->
+
+    </div>
+
+
+
+  </body>
+</html>

@@ -1,0 +1,262 @@
+body {
+  height: 450px;
+  width: 300px;
+  background-color: #353531;
+  color: #E5E5E5;
+  margin: 0px;
+  border-style: solid;
+  border-color:#D27B2A;
+}
+
+.containerBlock {
+  margin-left: 8%;
+  margin-right: 8%;
+}
+
+/* FONT */
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap');
+
+
+@font-face {
+  font-family: "Patua One";
+  src: url("fonts/Patua_One/PatuaOne-Regular.ttf");
+}
+
+/* OVERRIDE BOOSTRAP */
+#bootstrap-override {
+  background-color: #353531;
+  color: #E5E5E5;
+  font-family: "Patrick Hand SC", cursive;
+  font-family: "Gill Sans";
+}
+
+#bootstrap-override h2 { 
+  /* headings */
+  font-size: 22px;
+  line-height: 100%;
+  letter-spacing: 0.125em;
+  margin-top: 39px;
+  font-weight: lighter;
+}
+
+#bootstrap-override p {
+  /* paragraph details */
+  font-family: "Patua One";
+  font-size: 10px;
+  letter-spacing: 0.4px;
+  line-height: 100%;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.05em;
+
+}
+
+/* input choices */
+#bootstrap-override label {
+  font-size: 15px;
+  font-weight: lighter;
+  display: inline-block;
+
+}
+
+#bootstrap-override .input-box {
+  display: inline-block;
+  position: relative;
+  top: -63px;
+  width: 230px;
+  padding: 5px 7px;
+  border: none;
+  border-bottom: 2px solid #E5E5E5;
+  background-color: transparent;
+  font-family: "Patrick Hand SC";
+}
+
+.input-label {
+  margin-top: 10px;
+}
+
+.input-choices {
+  margin-left: 8px;
+}
+
+#service-label {
+  position: absolute;
+  top: 258px;
+}
+
+#bootstrap-override #country {
+  width: 230px;
+  padding: 5px 7px;
+  background-color: transparent;
+  border-bottom: 2px solid #E5E5E5;
+  font-family: "Patrick Hand SC";
+  border-radius: 0px;
+}
+
+#bootstrap-override .select-button {
+  width: 230px;
+  padding: 5px 7px;
+  background-color: transparent;
+  border-bottom: 2px solid #E5E5E5;
+  font-family: "Patrick Hand SC";
+  border-radius: 0px;
+}
+
+/* submit buttons */
+#bootstrap-override .submit-button {
+  font-family: "Patrick Hand SC";
+  background-color:#D27B2A;
+  position: absolute;
+  width: 230px;
+  height: 33px;
+  left: 35px;
+  top: 364px;
+
+  border-color: transparent;
+  box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+}
+
+#bootstrap-override .submit-button:hover {
+  border-style: solid;
+  border-color: #E5E5E5;
+  border-width: thin;
+}
+
+/* random */
+
+#introduction {
+  margin-bottom: 40px;
+}
+
+
+
+/* HELP PAGE */
+#helpIcon{
+  position:absolute;
+  left: 277px;
+}
+
+#preHelpPopup{
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.7); /* Black w/ opacity */
+  display: none;
+  position: fixed;
+  z-index: 1; 
+  width: 100%;
+  height: 100%;
+  outline: none;
+}
+
+#myHelpPopup {
+  background-color: #353531;
+  border-style: solid;
+  border-width: thin;
+  border-color:#D27B2A;
+  width: 255px;
+  height: 305px;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color:#D27B2A;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+
+/* STREAMING SERVICES */
+.block1 {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+.serviceButtons {
+    height: 55px;
+    width: 55px; 
+    margin: -2px;
+    border-style:solid;
+    border-color: transparent;
+    border-width:thin;
+    outline: none;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    font-size: 0;
+    line-height: 0; /* to hide the value text */
+  }
+
+
+#Netflix {
+  background: url("icons/netflix.png") no-repeat scroll 0 0 transparent;
+  background-size:contain;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+#HBO {
+  background: url("icons/hbo.png") no-repeat scroll 0 0 transparent;
+  background-size:contain;
+}
+
+#Hulu {
+  background: url("icons/hulu.png") no-repeat scroll 0 0 transparent;
+  background-size:contain;
+}
+
+#PrimeVideo{
+  background: url("icons/primevideo.png") no-repeat scroll 0 0 transparent;
+  background-size:contain;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+/* all transitions for hover */
+.serviceButtons:hover{
+  background-size: 60px;
+  width: 60px;
+  height: 60px;
+  z-index: 1;
+}
+
+
+/* active button */
+.serviceButtons:focus {
+  border-color:#D27B2A;
+  z-index: 1;
+}
+
+.footnotes{
+  position:absolute;
+  bottom:10px;
+  left: 10px;
+}
+
+#contact {
+  display: inline;
+}
+
