@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="changeService.css">
+
+  </head>
+  <body>
+    <div>
+      <label for="name">Welcome! What's your name?</label><br>
+      <input type="text" id="name">
+    </div>
+  
+    <!-- form input -->
+      <form class="container" action="popup2.html" method="get">
+        <!-- choose streaming service -->
+        <label for="service" id="services">Choose a streaming service</label><br>
+        <div class="block1">
+          <button class="serviceButtons" type="submit" value="Netflix" id="Netflix" onclick="storeVar()"></button>
+          <button class="serviceButtons" type="submit" value="HBO" id="HBO" onclick="storeVar()"></button>
+        </div>
+        <div class="block1">
+          <button class="serviceButtons" type="submit" value="Hulu" id="Hulu" onclick="storeVar()"></button>
+          <button class="serviceButtons" type="submit" value="PrimeVideo" id="PrimeVideo" onclick="storeVar()"></button><br>
+        </div>
+      </form>
+  
+    <script src="popup.js"></script>
+
+
+
+
+  </body>
+</html>

@@ -1,0 +1,85 @@
+.container {
+    top:50%;
+    left: 50%;
+    position: absolute;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  
+  }
+  
+  .block1 {
+    display: flex;
+  }
+  
+  
+  .serviceButtons {
+      margin: 15px;
+      height: 90px;
+      width: 90px; 
+      border-style:solid;
+      border-radius: 8px;
+      border-color: #353531;
+      border-width:thin;
+      outline: none;
+      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    }
+  
+  
+  #Netflix {
+    background: url("netflix.png") no-repeat scroll 0 0 transparent;
+  }
+  
+  #HBO {
+    background: url("hbo.png") no-repeat scroll 0 0 transparent;
+  }
+  
+  #Hulu {
+    background: url("hulu.png") no-repeat scroll 0 0 transparent;
+  }
+  
+  #PrimeVideo{
+    background: url("primevideo.png") no-repeat scroll 0 0 transparent;
+  }
+  
+  /* all transitions for hover */
+    
+  .serviceButtons:hover{
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    background-size: 100px;
+    transition-duration: 0.3s;
+  }
+  
+  #Netflix:hover {
+    background-size: 100px;
+    width: 100px;
+    height: 100px;
+    transition-duration: 0.3s;
+  }
+  #HBO:hover {
+    background-size: 100px;
+    width: 100px;
+    height: 100px;
+    transition-duration: 0.3s;
+  
+  }
+  #Hulu:hover {
+    background-size: 100px;
+    width: 100px;
+    height: 100px;
+    transition-duration: 0.3s;
+  }
+  #PrimeVideo:hover {
+    background-size: 100px;
+    width: 100px;
+    height: 100px;
+    transition-duration: 0.3s;
+  }
+  
+  
+  /* active button */
+  .serviceButtons:active {
+    border-color: #66977E;
+  }
+  
